@@ -1,0 +1,6 @@
+comandos
+npm run start:dev --> roda aplicacao 
+nest g(generate) resource(irá gerar os controlers, os services..) users(nome do contexto) modules(a pasta)
+
+OQ É UM DTO
+-- data transferr object 
