@@ -4,3 +4,12 @@ nest g(generate) resource(irá gerar os controlers, os services..) users(nome do
 
 OQ É UM DTO
 -- data transferr object 
+
+POO
+diferença entre metodos de classes private e protected
+--- o metodo private nao se extende para outras classes com a herença, ou seja, apenas a classe pode ter acesso a ela 
+--- o metodo protected pode ser herdado para outras classes por meio da herença 
+
+
+na entity fica a declaracao do que vai ser a classe que criou o usuario, na entidade voce ira por todos os atribuutos que esse usairo tera 
+no DTO ficara o que voce vai receber no body, o que vai mandar pro nest para criacao desse usuario 
