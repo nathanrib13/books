@@ -13,3 +13,6 @@ diferença entre metodos de classes private e protected
 
 na entity fica a declaracao do que vai ser a classe que criou o usuario, na entidade voce ira por todos os atribuutos que esse usairo tera 
 no DTO ficara o que voce vai receber no body, o que vai mandar pro nest para criacao desse usuario 
+
+
+//qual a diferença entre classes abstratas e interfaces
