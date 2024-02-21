@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+import { plainToInstance } from "class-transformer";
 import { CreateUserDto } from "../../dto/create-user.dto";
 import { UpdateUserDto } from "../../dto/update-user.dto";
 import { User } from "../../entities/user.entity";
@@ -14,14 +15,14 @@ export class UsersInMemoryRepository implements UsersRepository{
         })
         this.database.push(newUser)
 
-        return newUser
+        return plainToInstance(User,newUser)
     }
     findAll(): User[] | Promise<User[]> {
-        return this.database
+        return plainToInstance(User, this.database)
     }
     findOne(id: string): User | Promise<User> {
         const userFound = this.database.find((user) => user.id === id)
-        return userFound
+        return plainToInstance(User, userFound)
     }
     update(id: string, data: UpdateUserDto): User | Promise<User> {
         const userIndex = this.database.findIndex(user => user.id === id)
